@@ -1,0 +1,24 @@
+位      名称                           名称             符号    用法
+0      Carry flag                                       CF  
+1                                                               1
+2      Parity flag                     奇偶校验         PF  
+3                                                               0
+4      Adjust flag                                      AF  
+5                                                               0
+6      Zero flag                                        ZF  
+7      Sign flag                                        SF  
+8      Trap flag (single step)         陷阱             TF  
+9      Interrupt enable flag           中断启用         IF  
+10     Direction flag                  方向             DF  
+11     Overflow flag                   溢出             OF  
+12~13  I/O privilege level             I/O特权级别      IOPL    
+14     Nested task flag                任务嵌套         NT  
+15                                                              0
+16     Resume flag  恢复标志                            RF  
+17     Virtual 8086 mode flag          虚拟8086         VM  
+18     Alignment check                 对齐检查         AC  
+19     Virtual interrupt flag                           VIF 
+20     Virtual interrupt pending       虚拟中断悬而未决 VIP 
+21     Able to use CPUID instruction                    ID  
+22~31                                                           0  
+
