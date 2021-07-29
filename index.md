@@ -26,6 +26,23 @@ Syntax highlighted code block
 [Link](url) and ![Image](src)
 ```
 
+```cpp 
+using MyAllocList = std::list<T, MyAllocList>;
+
+MyAllocList<Widget> lw;
+
+
+/* typedef 几乎肯定要自己从头动手 */
+/* MyAllocList<T>::type 是std::list<T, MyAlloc<T>> 的同义词； */
+
+template<typename T>
+struct MyAllocList {
+    typedef std::list<T, MyAlloc<T>> type;
+};
+
+MyAllocList<Widget> lw;
+```
+
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
 ### Jekyll Themes
